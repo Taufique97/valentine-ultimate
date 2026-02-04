@@ -1,0 +1,16 @@
+<script>
+setInterval(()=>{
+ const h=document.createElement('div');
+ h.innerText='💖';
+ h.style.position='fixed';
+ h.style.left=Math.random()*100+'vw';
+ h.style.bottom='-10px';
+ h.style.fontSize='24px';
+ h.style.animation='float 5s linear';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),5000);
+},500);
+</script>
+<style>
+@keyframes float{to{transform:translateY(-110vh);opacity:0}}
+</style>

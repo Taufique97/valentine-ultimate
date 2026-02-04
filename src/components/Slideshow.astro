@@ -1,0 +1,5 @@
+<img id="s" src="/photo1.jpg" style="width:100%;border-radius:12px">
+<script>
+const p=['/photo1.jpg','/photo2.jpg','/photo3.jpg'];let i=0;
+setInterval(()=>{i=(i+1)%p.length;document.getElementById('s').src=p[i];},3000);
+</script>
