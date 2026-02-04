@@ -1,14 +1,28 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import FloatingHearts from "../components/FloatingHearts.astro";
-import MusicPlayer from "../components/MusicPlayer.astro";
-import Slideshow from "../components/Slideshow.astro";
-import Buttons from "../components/Buttons.astro";
+const message = "Will you be my Valentine? 💖";
 ---
-<BaseLayout>
-<FloatingHearts />
-<MusicPlayer />
-<h1>Will you be my Valentine? 💖</h1>
-<Slideshow />
-<Buttons />
-</BaseLayout>
+<html>
+<head>
+<title>Valentine 💝</title>
+<style>
+body{background:linear-gradient(135deg,#ff9a9e,#fad0c4);text-align:center;font-family:sans-serif;}
+button{padding:15px 30px;border-radius:25px;font-size:18px;}
+#no{position:absolute;}
+</style>
+</head>
+<body>
+<h1>{message}</h1>
+<img src="/gifs/heart.gif" width="200"/>
+<img src="/gifs/cute.gif" width="200"/>
+<br/><br/>
+<button onclick="alert('Yay ❤️')">YES</button>
+<button id="no">NO</button>
+<script>
+const no=document.getElementById('no');
+no.onmouseover=()=>{
+no.style.left=Math.random()*window.innerWidth+'px';
+no.style.top=Math.random()*window.innerHeight+'px';
+};
+</script>
+</body>
+</html>
