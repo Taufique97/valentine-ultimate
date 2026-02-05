@@ -1,14 +1,8 @@
 # Project Valentine Apps
 
-## Demo Website
-
-- https://wybm-valentine.netlify.app
-
 ## Description
 
 A website for your valentine ~
-
-Inspired from this [website](https://valentine.mewtru.com/)
 
 ## Tech Stack
 
@@ -51,13 +45,7 @@ Inspired from this [website](https://valentine.mewtru.com/)
     // https://astro.build/config
     export default defineConfig({
       integrations: [tailwind()],
-      // 'https://<your-github-account>.github.io'
-      site: 'https://myaccount-github.io'
       // this will refer to the name of the repository, don't forget the slash
-      base: '/apps-valentine-showcase'
     });
     ```
   - Commit and Push, Actions will be triggered, just wait for the deployment done
-  - You can access it via `https://my-account.github.io/apps-valentine-showcase
-  - Based on [This Documentation](https://docs.astro.build/en/guides/deploy/github/)
-  
